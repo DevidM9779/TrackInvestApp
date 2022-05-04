@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Portfolio {
+    var name: String
+    var stocks: [String:Double]?
+    var cryptos: [String:Double]?
+}
+
+

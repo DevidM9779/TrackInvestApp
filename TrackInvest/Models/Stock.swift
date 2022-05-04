@@ -6,3 +6,14 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct StockModel {
+    
+    var name: String
+    var symbol: String
+    var value: Double
+    var purchasesHistory: [Movement]
+
+    
+}

@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct TrackInvestApp: App {
+    
+    // initialize Firebase
+    init () {
+        FirebaseApp.configure()
+    }
+    
+    
+    
+
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

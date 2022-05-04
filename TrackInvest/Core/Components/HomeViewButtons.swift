@@ -7,6 +7,27 @@
 
 import SwiftUI
 
+struct HeartButton: View {
+    var body: some View {
+        
+        Image(systemName: "heart.fill")
+            .foregroundColor(Color("SecondaryTextColor"))
+            .font(.system(size: 15))
+
+    }
+}
+
+struct SettingsButton: View {
+    var body: some View {
+        
+        Image(systemName: "line.3.horizontal.decrease")
+            .foregroundColor(Color("SecondaryTextColor"))
+            .font(.system(size: 20))
+            
+        
+    }
+}
+
 struct AddPortfolioBtn: View {
     var body: some View {
         ZStack {
@@ -19,14 +40,16 @@ struct AddPortfolioBtn: View {
                         .frame(width: 70, height: 70)
                         .foregroundColor(Color("AccentColor"))
                         .opacity(0.80)
-                )
+                ).frame(width: 70, height: 70)
             
         }
     }
 }
 
-struct AddPortfolioBtn_Previews: PreviewProvider {
+struct HomeViewButtons_Previews: PreviewProvider {
     static var previews: some View {
-        AddPortfolioBtn()
+        SettingsButton().previewLayout(.sizeThatFits)
+        HeartButton().previewLayout(.sizeThatFits)
+        AddPortfolioBtn().previewLayout(.sizeThatFits)
     }
 }

@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+
+
+struct Asset {
+    var stock: Bool
+    var crypto: Bool
+}

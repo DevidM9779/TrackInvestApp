@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Movement {
+    var data: Date
+    var numShares: Double
+    var value: Double
+}
